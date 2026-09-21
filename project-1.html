@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Animation 1 — Atishaya Jain</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="blob" id="blob"></div>
+
+<nav>
+  <a class="mark" href="index.html">ATISHAYA JAIN</a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="project-hero">
+  <span class="num">Project 1</span>
+  <h1 class="reveal in">3D Animation 1</h1>
+  <p class="lede reveal in">A stylised skeleton character, sculpted and rigged with a custom watercolour-style shader and a fully procedural eye rig.</p>
+  <a class="back-home" href="index.html"><span class="arrow">←</span> Back to home</a>
+</section>
+
+<div class="media-block reveal">
+  <video controls playsinline src="assets/media/project_1.mp4"></video>
+  <p class="media-caption">Character turnaround and rig demo</p>
+</div>
+
+<div class="media-grid">
+  <div class="reveal">
+    <img src="assets/media/project_1_gif.gif" alt="Skeleton character model turnaround">
+    <p class="media-caption">Sculpted skeleton character</p>
+  </div>
+  <div class="reveal">
+    <img src="assets/media/project_1_gif_2.gif" alt="Procedural eye rig demo showing blinking and eye movement">
+    <p class="media-caption">Procedural eye rig — blink and eye movement</p>
+  </div>
+</div>
+
+<div class="info-block reveal">
+  <h2>Sculpting</h2>
+  <p>I wanted to create a unique character with a range of expressions, but with a familiar touch. I chose a skeleton design since there have been so many, but I gave it a non-human shape to differentiate it. Also decided not to give it a mouth, so all the expressions will be through the body and eyes.</p>
+</div>
+<div class="media-grid">
+  <div class="reveal"><img src="assets/renders_clean/p1-1a.png" alt="Sculpted skeleton character head, close-up"></div>
+  <div class="reveal"><img src="assets/renders_clean/p1-1b.png" alt="Sculpted skeleton character, full body"></div>
+</div>
+
+<div class="info-block reveal">
+  <h2>Custom color</h2>
+  <p>I used Geometry Nodes to create a soft, organic pattern that mimics how watercolour spreads. By blending gradients with noise, I added natural variation and smooth colour transitions to get a diffused, hand-painted look. I also added a custom outline modifier using nodes, which gives me control over the edges and helps enhance the overall watercolour style.</p>
+</div>
+<div class="media-grid">
+  <div class="reveal"><img src="assets/renders_clean/p1-2a.png" alt="Material shader node graph"></div>
+  <div class="reveal"><img src="assets/renders_clean/p1-2b.png" alt="Outline material node graph"></div>
+</div>
+
+<div class="info-block reveal">
+  <h2>Procedural eye rig</h2>
+  <p>It's a procedural eye rig designed to automatically shape and animate the eyeball and eyelids using a small set of intuitive controls. This allows for natural blinking, eye movement, and eyelid deformation without the need for extensive manual sculpting or individual keyframing. The procedural setup helps maintain consistency throughout the animation while making the rig easy to adjust, modify, and reuse across different characters or models. Another major advantage is that the system updates cleanly when the underlying model or geometry changes, making the workflow faster, more flexible, and more efficient than creating and animating every movement by hand.</p>
+  <p>Alongside rigging and procedural animation, I have a strong understanding of Geometry Nodes in Blender and am comfortable creating complex procedural setups, Geometry Nodes-based animations, and custom materials. I can use Geometry Nodes to generate and manipulate geometry dynamically, create controlled procedural effects, and develop animations that respond to different parameters or inputs. I'm also comfortable experimenting with and building custom materials and shader setups, allowing me to combine procedural geometry, animation, and materials into cohesive and adaptable systems.</p>
+</div>
+
+<div class="info-images">
+  <div class="reveal"><img src="assets/renders/p1-4.png" alt="Procedural eye rig full node graph"></div>
+</div>
+
+<footer class="site-footer">
+  <span>© 2026 — Atishaya Jain</span>
+  <a class="back-home" href="index.html"><span class="arrow">←</span> Back to home</a>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

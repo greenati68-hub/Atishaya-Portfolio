@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Animation 2 — Atishaya Jain</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="blob" id="blob"></div>
+
+<nav>
+  <a class="mark" href="index.html">ATISHAYA JAIN</a>
+  <div class="links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="project-hero">
+  <span class="num">Project 2</span>
+  <h1 class="reveal in">3D Animation 2</h1>
+  <p class="lede reveal in">A caped frog-knight character and a shapeshifting slime creature, rigged for stylised, exaggerated movement rather than realistic simulation.</p>
+  <a class="back-home" href="index.html"><span class="arrow">←</span> Back to home</a>
+</section>
+
+<div class="media-block reveal">
+  <video controls playsinline src="assets/media/project_2.mp4"></video>
+  <p class="media-caption">Rig and animation demo</p>
+</div>
+
+<div class="media-grid">
+  <div class="reveal">
+    <img src="assets/media/project_2_gif.gif" alt="Frog knight character with wiggle-bone cape">
+    <p class="media-caption">Cape rig — wiggle bones</p>
+  </div>
+  <div class="reveal">
+    <img src="assets/media/project_2_gif_2.gif" alt="Purple slime creature demonstrating squash and stretch">
+    <p class="media-caption">Slime rig — squash and stretch</p>
+  </div>
+</div>
+
+<div class="info-block reveal">
+  <h2>Rig control</h2>
+  <p>The cape is made with wiggle bones so that it can have a wavy feel to it and can be more controlled than a cloth simulation. This allows the movement to be intentionally exaggerated and stylised, giving it an extra 2D feel rather than aiming for realistic cloth behaviour. The bone-based rig also gives greater control over the cape's shape, allowing specific areas to be posed, adjusted, and animated independently. This makes it easier to create expressive movements and maintain consistency throughout the animation while keeping the cape responsive to the character's motion.</p>
+  <p>The slime rig is divided into two main parts. The first part uses Bendy Bones to create a flexible squash-and-stretch effect, allowing the slime to deform naturally while still maintaining a stylised look. To gain more control over the body, the rig is divided into four sections, which can be manipulated independently. This allows the slime to bend, stretch, and even change direction midway through its body, creating more organic and unpredictable movements that give it a more sentient and expressive feel.</p>
+  <p>The second part uses a Lattice modifier, which works together with the rig to provide smoother and more detailed deformation across the slime's body. The lattice helps blend the movements between the different rig sections, preventing the deformation from looking too segmented or rigid. Together, the Bendy Bones and Lattice give the slime a high level of control while keeping its movements fluid, exaggerated, and animation-friendly, rather than relying on realistic simulation.</p>
+
+  <h2>Custom color</h2>
+  <p>I used Geometry Nodes to create a soft, organic pattern that mimics how watercolour spreads. By blending gradients with noise, I added natural variation and smooth colour transitions to get a diffused, hand-painted look. I also added a custom outline modifier using nodes, which gives me control over the edges and helps enhance the overall watercolour style.</p>
+</div>
+<div class="media-grid">
+  <div class="reveal"><img src="assets/renders_clean/p2-2a.png" alt="Material shader node graph"></div>
+  <div class="reveal"><img src="assets/renders_clean/p2-2b.png" alt="Outline material node graph"></div>
+</div>
+
+<footer class="site-footer">
+  <span>© 2026 — Atishaya Jain</span>
+  <a class="back-home" href="index.html"><span class="arrow">←</span> Back to home</a>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
